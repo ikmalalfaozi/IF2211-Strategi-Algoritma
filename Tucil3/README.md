@@ -9,7 +9,7 @@ Environment:
 
 -   Visual Studio Code (Alternatif)
 
-Untuk menjalankan program dibutuhkan beberapa instalasi module/package berikut:
+Modul/Package:
 
 -   numpy
 
