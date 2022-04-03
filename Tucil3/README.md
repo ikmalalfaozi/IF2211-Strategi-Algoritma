@@ -18,7 +18,7 @@ Untuk menginstall module/package tersebut Anda bisa menuliskan perintah pip inst
 # Cara Menggunakan Program
 
 1. Buka folder yang sudah di unduh dengan menggunakan Visual Studio Code
-2. Buka file main.py
+2. Buka file main.py di dalam folder src
 3. Untuk menjalankan program, ketik icon Run Code pada Visual Studio Code.
 
 # Author / Identitas Pembuat
