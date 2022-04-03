@@ -3,13 +3,14 @@ import random
 import numpy as np
 from Graph import *
 from time import time
+import sys
 import tkinter
 
 def randomPuzzle():
 # Membuat random puzzle
     array = [i for i in range(1,17)]
     random.shuffle(array)
-    puzzle = np.array(array, dtype='int8').reshape(4,4)
+    puzzle = np.array(array, dtype='int8').reshape(4,4) 
     return puzzle
 
 def readFile(filename):
@@ -312,6 +313,11 @@ def main():
                 s4 =  Node(solution, m4, None, solution.level + 1, cost, (row, col-1), 'left')
                 lNode.append(s4)
                 n += 1
+    
+            # Menampilkan jumlah simpul yang sudah dibangkitkan
+            sys.stdout.write("\r{} {}".format("Jumlah simpul yang sudah dibangkitkan :",n))
+
+        print("\n")
 
         steps = []
         p = solution
@@ -327,7 +333,6 @@ def main():
         execution_time = time() - start_time
         print("Waktu eksekusi : ", execution_time)
         print("Jumlah Langkah menuju goal state :", solution.level)
-        print("Jumlah simpul yang dibangkitkan :",n)
 
         main_windows = tkinter.Tk()
         main_windows.title("PUZZLE PROCESS")
