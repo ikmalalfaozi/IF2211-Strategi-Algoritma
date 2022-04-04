@@ -390,7 +390,7 @@ def main():
         elif (i == 3 and j == 3):
             label16.config(text='', background="white")
 
-        next = tkinter.Button(main_windows, text ="NEXT STEP", command = Next)
+        next = tkinter.Button(main_windows, text ="NEXT STEP",  command = Next)
         prev = tkinter.Button(main_windows, text="PREV STEP", command = Prev)
         play = tkinter.Button(main_windows, text="PLAY", command = Play)
 
